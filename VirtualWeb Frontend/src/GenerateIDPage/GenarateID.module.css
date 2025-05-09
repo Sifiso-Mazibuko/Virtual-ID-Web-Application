@@ -1,0 +1,122 @@
+/* Base styling for the entire container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px;
+  min-height: 100vh; /* Ensures it takes the full height of the viewport */
+  width: 100%; /* Ensures it takes the full width of the viewport */
+  background: #f4f7fc;
+  position: relative;
+  border: 5px solid black; /* Added black border and increased thickness */
+  box-sizing: border-box; /* Ensures padding doesn't affect total width/height */
+}
+
+/* Title styling */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 2px solid black; /* Added black border at the bottom */
+  padding-bottom: 10px; /* Added padding for space between text and border */
+}
+
+/* Loader styling */
+.loader {
+  font-size: 1.6rem;
+  color: #007bff;
+  margin-top: 20px;
+  border: 2px solid black; /* Added black border */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Common button styling */
+button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  border: 2px solid black; /* Added black border */
+}
+
+/* Generate ID button */
+.generateButton {
+  background-color: #28a745;
+  color: white;
+  margin: 15px 0;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 128, 0, 0.3);
+  border: 2px solid black; /* Added black border */
+}
+
+/* Hover effect for Generate ID button */
+.generateButton:hover {
+  background-color: #218838;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 128, 0, 0.4);
+}
+
+/* Download ID button - positioned at the top-right */
+.downloadButton {
+  background-color: #007bff;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
+  z-index: 10;
+  max-width: 150px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: 2px solid black; /* Added black border */
+}
+
+/* Hover effect for Download ID button */
+.downloadButton:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.5);
+}
+
+/* Back to Dashboard button */
+.backButton {
+  background-color: gray;
+  color: white;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(220, 53, 69, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: 2px solid black; /* Added black border */
+}
+
+/* Hover effect for Back to Dashboard button */
+.backButton:hover {
+  background-color:rgb(165, 126, 42);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(220, 53, 69, 0.5);
+}
+
+/* ID card preview container styling */
+.idPreviewContainer {
+  margin-top: 30px;
+  text-align: center;
+  max-width: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid black; /* Added black border */
+}
+
+/* Styling for the generated ID image */
+.idPreviewContainer img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid black; /* Added black border */
+}
